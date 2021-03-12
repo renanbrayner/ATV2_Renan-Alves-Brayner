@@ -25,7 +25,6 @@ public class MyCircle {
 		this.x = center.x;
 		this.y = center.y;
 	}
-
 	public void setCenterXY(int x, int y) {
 		this.x = x;
 		this.y = y;

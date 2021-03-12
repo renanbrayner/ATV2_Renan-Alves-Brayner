@@ -21,6 +21,7 @@ public class TestMyCircle {
 
 	public static void testContructorMyCircle() {
 		MyCircle testCircle = new MyCircle(0, 0, 1);
+
 		if (testCircle instanceof MyCircle) {
 			System.out.println(ANSI_GREEN + "✓ Passed testConstructorMyCircle" + ANSI_RESET);
 		} else {
@@ -31,6 +32,7 @@ public class TestMyCircle {
 	public static void testConstructorWithMyPointMyCircle() {
 		MyPoint testPoint = new MyPoint();
 		MyCircle testCircle = new MyCircle(testPoint, 1);
+
 		if (testCircle instanceof MyCircle) {
 			System.out.println(ANSI_GREEN + "✓ Passed testConstructorWithMyPointMyCircle" + ANSI_RESET);
 		} else {
@@ -48,6 +50,7 @@ public class TestMyCircle {
 			System.out.println(ANSI_GREEN + "✓ Passed testGetRadius" + ANSI_RESET);
 		} else {
 			System.out.println(ANSI_RED + "✗ Failed testGetRadius" + ANSI_RESET);
+			System.out.println("   Expected: " + expectedResult + "\n   Got: " + result);
 		}
 	}
 
@@ -61,6 +64,7 @@ public class TestMyCircle {
 			System.out.println(ANSI_GREEN + "✓ Passed testGetCenter" + ANSI_RESET);
 		} else {
 			System.out.println(ANSI_RED + "✗ Failed testGetCenter" + ANSI_RESET);
+			System.out.println("   Expected: " + expectedResult + "\n   Got: " + result);
 		}
 	}
 
@@ -74,6 +78,7 @@ public class TestMyCircle {
 			System.out.println(ANSI_GREEN + "✓ Passed testGetCenterX" + ANSI_RESET);
 		} else {
 			System.out.println(ANSI_RED + "✗ Failed testGetCenterX" + ANSI_RESET);
+			System.out.println("   Expected: " + expectedResult + "\n   Got: " + result);
 		}
 	}
 
@@ -87,6 +92,7 @@ public class TestMyCircle {
 			System.out.println(ANSI_GREEN + "✓ Passed testGetCenterY" + ANSI_RESET);
 		} else {
 			System.out.println(ANSI_RED + "✗ Failed testGetCenterY" + ANSI_RESET);
+			System.out.println("   Expected: " + expectedResult + "\n   Got: " + result);
 		}
 	}
 
@@ -102,6 +108,7 @@ public class TestMyCircle {
 			System.out.println(ANSI_GREEN + "✓ Passed testSetRadius" + ANSI_RESET);
 		} else {
 			System.out.println(ANSI_RED + "✗ Failed testSetRadius" + ANSI_RESET);
+			System.out.println("   Expected: " + expectedResult + "\n   Got: " + result);
 		}
 	}
 
