@@ -42,20 +42,28 @@ public class TestMyPoint {
 	public static void testGetX() {
 		MyPoint testPoint = new MyPoint();
 
-		if (testPoint.getX() == 0) {
+		int result = testPoint.getX();
+		int expectedResult = 0;
+
+		if (result == expectedResult) {
 			System.out.println(ANSI_GREEN + "✓ Passed testGetX" + ANSI_RESET);
 		} else {
 			System.out.println(ANSI_RED + "✗ Failed testGetX" + ANSI_RESET);
+			System.out.println("   Expected: " + expectedResult + "\n   Got: " + result);
 		}
 	}
 
 	public static void testGetY() {
 		MyPoint testPoint = new MyPoint();
 
-		if (testPoint.getY() == 0) {
+		int result = testPoint.getY();
+		int expectedResult = 0;
+
+		if (result == expectedResult) {
 			System.out.println(ANSI_GREEN + "✓ Passed testGetY" + ANSI_RESET);
 		} else {
 			System.out.println(ANSI_RED + "✗ Failed testGetY" + ANSI_RESET);
+			System.out.println("   Expected: " + expectedResult + "\n   Got: " + result);
 		}
 	}
 	
@@ -64,10 +72,14 @@ public class TestMyPoint {
 
 		testPoint.setX(1);
 
-		if (testPoint.getX() == 1) {
+		int result = testPoint.getX();
+		int expectedResult = 1;
+
+		if (result == expectedResult) {
 			System.out.println(ANSI_GREEN + "✓ Passed testSetX" + ANSI_RESET);
 		} else {
 			System.out.println(ANSI_RED + "✗ Failed testSetX" + ANSI_RESET);
+			System.out.println("   Expected: " + expectedResult + "\n   Got: " + result);
 		}
 	}
 
@@ -76,10 +88,14 @@ public class TestMyPoint {
 
 		testPoint.setY(1);
 
-		if (testPoint.getY() == 1) {
+		int result = testPoint.getY();
+		int expectedResult = 1;
+
+		if (result == expectedResult) {
 			System.out.println(ANSI_GREEN + "✓ Passed testSetY" + ANSI_RESET);
 		} else {
 			System.out.println(ANSI_RED + "✗ Failed testSetY" + ANSI_RESET);
+			System.out.println("   Expected: " + expectedResult + "\n   Got: " + result);
 		}
 	}
 
@@ -88,10 +104,17 @@ public class TestMyPoint {
 
 		testPoint.setXY(1, 2);
 
-		if (testPoint.getX() == 1 && testPoint.getY() == 2) {
+		int result1 = testPoint.getX();
+		int result2 = testPoint.getY();
+		int expectedResult1 = 1;
+		int expectedResult2 = 2;
+
+		if (result1 == expectedResult1 && result2 == expectedResult2) {
 			System.out.println(ANSI_GREEN + "✓ Passed testSetXY" + ANSI_RESET);
 		} else {
 			System.out.println(ANSI_RED + "✗ Failed testSetXY" + ANSI_RESET);
+			System.out.println("   Expected: " + expectedResult1 + " and " + expectedResult2 +
+				"\n   Got: " + result1 + " and " + result2);
 		}
 	}
 
